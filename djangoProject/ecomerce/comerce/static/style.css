@@ -1,0 +1,37 @@
+header {
+    background-repeat: round;
+    justify-content: center;
+}
+
+h3 {
+    color: white;
+}
+
+.sidebar {
+    grid-column: head-col-start / content-col-start;
+    grid-row: head-row-end / content-row-end;
+}
+
+.color_fondo {
+    background-color: #5573df;
+}
+
+.alineacion {
+    text-align: left;
+    padding: 25px
+}
+
+a,
+li {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    background-color: rgb(188, 232, 234);
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+}

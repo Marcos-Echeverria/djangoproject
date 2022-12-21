@@ -1,0 +1,16 @@
+{%extends "base.html" %}
+
+{% block titulo %} Registro {% endblock %}
+
+{% block contenido %} 
+<div class='row justify-content-center'>
+        <form action="{% url "register" %}" method="post" class="form-text">
+            {% csrf_token %}
+            <div class="form-group">
+                {{user_form.as_table}}
+            </div>
+            <button class="btn btn-primary">Enviar</button>
+        </form>
+   
+</div>
+{% endblock %}
