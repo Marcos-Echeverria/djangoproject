@@ -32,6 +32,28 @@ a:hover {
 }
 
 footer {
-    width: 100%;
     position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+html {
+    min-height: 100%;
+    position: relative;
+  }
+
+.text-center {
+
+    background-color: #5573df;
+}
+
+.row {
+    margin-bottom: 7rem;
+    margin-top: 2rem;
 }
