@@ -4,13 +4,14 @@
 
 {% block contenido %}
 
-<form action='{% url "Email" %}' enctype="multipart/form-data" class="form-text" method="post" validate">
+<form action='{% url "Email" %}' enctype="multipart/form-data" class="form" method="post" validate>
 
     {% csrf_token %}
     {{form}}
   
 <br><br>
  <input type="submit" class="btn btn-primary"></input>
+
 </form>
   
 {% endblock contenido %}

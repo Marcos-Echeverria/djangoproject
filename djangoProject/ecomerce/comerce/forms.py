@@ -76,4 +76,4 @@ class EmailForm(forms.Form):
     subject = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control m-2 p-2'}), label="Motivo")
     message = forms.CharField(widget=forms.Textarea(attrs={'class': 'form-control m-2 p-2'}), label="Mensaje")
     sender = forms.EmailField(widget=forms.TextInput(attrs={'class': 'form-control m-2 p-2'}),label="Email")
-    cc_myself = forms.BooleanField(required=False)
+    cc_myself = forms.BooleanField(required=False, label="Reenviarme el correo") 
