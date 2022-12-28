@@ -1,0 +1,19 @@
+{%extends "base.html" %}
+
+{% block titulo %} Login {% endblock %}
+
+{% block contenido %}
+
+  <div class='row justify-content-center'>
+    
+    <form action="{% url "login" %}" enctype="multipart/form-data" method="post" class="form-text">
+        {% csrf_token %}
+        <div class="form-group">
+            {{form_user}}
+        </div>
+        <input type="submit"  class="btn btn-danger m-4 p-3" value="Iniciar Sesión">
+    </form>
+   
+</div>
+
+{% endblock %}

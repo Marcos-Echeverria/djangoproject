@@ -1,0 +1,31 @@
+{%extends "base.html" %}
+
+{% block titulo %} Compra {% endblock %}
+
+{% block contenido %}
+<div class='row justify-content-center'>
+  <div class="card mb-4" style="max-width: 900px;">
+    <div class="row g-0">
+      <div class="col-md-6">
+        <img src="../media/{{product.imagen}}" class="img-fluid" alt="...">
+      </div>
+      <div class="col-md-6">
+        <div class="card-body">
+          <h5 class="card-title">{{product.nombre_producto}}</h5>
+          <p class="card-text">{{product.categoria.descripcion_categoria}}</p>
+          <h5 class="card-text">${{ product.precio }}</h5>
+        </div>
+        <div class="card-footer">
+          <form action="{% url 'sell' product.id %}" method="post">
+            {% csrf_token %}
+            {{sell_form.as_table}}
+            <input type="submit" class="btn btn-danger m-4 p-3" value="Comprar">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}
