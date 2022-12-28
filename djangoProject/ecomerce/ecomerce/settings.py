@@ -77,11 +77,11 @@ WSGI_APPLICATION = 'ecomerce.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'djangodb',
-        'USER': 'postgres',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'zazuagex$djangodb',
+        'USER': 'zazuagex',
         'PASSWORD': 'Prueba!123',
-        'HOST': 'localhost',
+        'HOST': 'zazuagex.mysql.pythonanywhere-services.com',
         'PORT': '5432',
     }
 }
