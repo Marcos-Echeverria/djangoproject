@@ -82,7 +82,6 @@ DATABASES = {
         'USER': 'zazuagex',
         'PASSWORD': 'Prueba!123',
         'HOST': 'zazuagex.mysql.pythonanywhere-services.com',
-        'PORT': '5432',
     }
 }
 
