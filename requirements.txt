@@ -10,4 +10,4 @@ sqlparse==0.4.3
 tomli==2.0.1
 tzdata==2022.6
 mysqlclient==2.1.1
-mysql-0.0.3
+mysql
