@@ -69,11 +69,22 @@ WSGI_APPLICATION = 'ecomerce.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 # DATABASES = {
-#      'default': {
-#          'ENGINE': 'django.db.backends.sqlite3',
-#          'NAME': BASE_DIR / 'db.sqlite3',
-#      }
-#   }
+#       'default': {
+#           'ENGINE': 'django.db.backends.sqlite3',
+#           'NAME': BASE_DIR / 'db.sqlite3',
+#       }
+#    }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'djangodb',
+#         'USER': 'postgres',
+#         'PASSWORD': 'Prueba!123',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
 
 DATABASES = {
     'default': {
@@ -82,7 +93,6 @@ DATABASES = {
         'USER': 'zazuagex',
         'PASSWORD': 'Prueba!123',
         'HOST': 'zazuagex.mysql.pythonanywhere-services.com',
-        'PORT': '5432',
     }
 }
 
